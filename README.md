@@ -1,74 +1,145 @@
-# React + TypeScript + Vite
+# Real Estate Listings & Analytics App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack React + TypeScript application for browsing real estate listings, filtering properties, and exploring market insights. Built to demonstrate UI-heavy features, responsive layouts, and data visualization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+This project is a professional portfolio app designed to showcase:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Browsing real estate listings
+- Filtering by price, location, and bedrooms
+- Viewing property details
+- Displaying analytics for market trends and averages
+- Fast, responsive performance with lazy loading and pagination
 
-## Expanding the ESLint configuration
+It’s ideal for demonstrating full-stack development skills and handling real-world data scenarios.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS  
+- **Backend:** Node.js (API + database)  
+- **Analytics:** Python (optional layer for market statistics)  
+- **Version Control:** Git + GitHub  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Listing cards displaying property info
+- Filters panel (price range, location, bedrooms)
+- Property detail pages
+- Analytics page with price trends, averages, and charts
+- Responsive design for desktop and mobile
+- Performance optimizations (lazy loading, pagination)
+- Clear code structure with reusable components
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# real-estate-app
+---
+
+## Project Structure
+
+# Real Estate Listings & Analytics App
+
+A full-stack React + TypeScript application for browsing real estate listings, filtering properties, and exploring market insights. Built to demonstrate UI-heavy features, responsive layouts, and data visualization.
+
+---
+
+## Overview
+
+This project is a professional portfolio app designed to showcase:
+
+- Browsing real estate listings
+- Filtering by price, location, and bedrooms
+- Viewing property details
+- Displaying analytics for market trends and averages
+- Fast, responsive performance with lazy loading and pagination
+
+It’s ideal for demonstrating full-stack development skills and handling real-world data scenarios.
+
+---
+
+## Tech Stack
+
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS  
+- **Backend:** Node.js (API + database)  
+- **Analytics:** Python (optional layer for market statistics)  
+- **Version Control:** Git + GitHub  
+
+---
+
+## Features
+
+- Listing cards displaying property info
+- Filters panel (price range, location, bedrooms)
+- Property detail pages
+- Analytics page with price trends, averages, and charts
+- Responsive design for desktop and mobile
+- Performance optimizations (lazy loading, pagination)
+- Clear code structure with reusable components
+
+---
+
+## Project Structure
+
+/real-estate-app
+├─ src/
+│ ├─ components/ # Reusable UI components
+│ ├─ pages/ # ListingPage, AnalyticsPage, etc.
+│ ├─ data/ # Sample data files
+│ ├─ styles/ # Tailwind / CSS
+│ └─ App.tsx # Main app entry
+├─ public/ # Static assets
+├─ package.json
+├─ vite.config.ts
+└─ README.md
+
+
+---
+
+## Installation / Getting Started
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/techtaley/real-estate-app.git
+
+2. Navigate into the project folder:
+
+cd real-estate-app
+
+
+3. Install dependencies:
+
+npm install
+
+4. Run the development server:
+
+npm run dev
+
+5. Open the URL displayed in your browser to view the app.
+
+Screenshots / Demo
+
+(Add screenshots or GIFs here of your listing cards, filters, analytics charts, etc.)
+
+Future Improvements
+
+-Connect to a live database for real property listings
+-Add Python analytics layer for dynamic market insights
+-Implement user authentication and profiles
+-Integrate map view for property locations
+
+Attributions
+-Design created in Figma Make
+-Built with React, TypeScript, Vite, and Tailwind CSS
+-Analytics ideas inspired by real-world market data scenarios
+
+Why This Project is Strong
+-Highly relatable for recruiters: demonstrates real-world filtering, state management, and analytics
+-UI-heavy and pattern-based, showcasing polished design skills
+-Full-stack experience with backend APIs and optional Python analytics layer
+-Clear, maintainable code structure suitable for portfolio review
+
