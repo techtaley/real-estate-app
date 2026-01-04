@@ -89,14 +89,18 @@ It’s ideal for demonstrating full-stack development skills and handling real-w
 │ ├─ components/ # Reusable UI components
 │ ├─ pages/ # ListingPage, AnalyticsPage, etc.
 │ ├─ data/ # Sample data files
-│ ├─ styles/ # Tailwind / CSS
+│ ├─ styles/ # Tailwind / CSS 
 │ └─ App.tsx # Main app entry
 ├─ public/ # Static assets
 ├─ package.json
 ├─ vite.config.ts
 └─ README.md
 
+## Design → Code Workflow
 
+- Figma Make file used to create UI components and layouts
+- Converted design to React + TypeScript components in <2 hours
+- Maintained responsive layouts and reusable component patterns
 ---
 
 ## Installation / Getting Started

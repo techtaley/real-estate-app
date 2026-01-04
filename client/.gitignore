@@ -7,7 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+#dependencies
 node_modules
+
+#production
 dist
 dist-ssr
 *.local
@@ -16,9 +19,32 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+#env
+.env
+
+#masOs
+._*
+.DS_Store
+
+#logs
+npm-debug.log
+
+#ignore
+
+#old program files
+index2.html
+App2.tsx
+index2.css
+main2.tsx
+package2.json
+packack-lock2.json
+README2.md
+vite.config2.ts
+
+
